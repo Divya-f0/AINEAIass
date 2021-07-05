@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            
+            /* PAGE LAYOUT*/
+            .df{
+                display: flex;
+            }
+
+            /*TEXT LANDING*/
+            #landing{
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            /*  LEFT SIDE BOX SHADOW */ 
+            #ma{
+                width: 150px;
+                box-shadow: 10px 0 5px 0 rgba(211, 211, 211, 0.5);;
+            }
+
+            /* LOGO INSIDE VIEW   */
+            .inside{
+                width: 0;
+                height: 0;
+                border-right: 10px solid transparent;
+                border-top: 10px solid black;
+                border-left: 10px solid black;
+                border-bottom: 10px solid black;
+                border-radius: 10px;
+            }
+
+             /* LOGO MIDDLE VIEW   */
+            .middle{
+                border:  3px solid ;
+                border-right: solid transparent;
+                border-top:  solid transparent;
+                padding: 5px;
+                border-radius: 100%;
+                width: 20px;
+            }
+
+             /* LOGO LAST VIEW   */
+            .frist{
+                border: solid;
+                border-right: solid transparent;
+                border-top:  solid transparent;
+                border-left:  solid transparent;
+                border-radius: 100%;
+                width: 35px;
+                padding: 5px;
+                transform: rotate(45deg);
+            }
+
+             /* LOGO POSITION  */
+            .pos{
+                margin-left: 30px;
+                padding: 15px;
+            }
+
+            /*  POSITION OF STUDENT & SETTINGS */
+            #ups{
+                border: hidden;
+                width: 150px;
+                height: 60px;
+                text-align: center;
+                padding-top: 15px;
+            }
+
+            /* POSITION OF LESSON PLAN  */
+            #plan{
+                border-left: 4px solid blue;
+                background-color: rgb(135, 204, 250,0.5);
+                text-align: center;
+                height: 60px;
+                padding-top: 15px;
+        
+            }
+
+            /* RIGHT SIDE VIEW*/
+            details{
+                background-color: rgba(211, 211, 211, 0.4);
+                width: 900px;
+                height: 500px;
+                padding: 30px;
+            }
+
+            /* Insert URL here */
+            .ins{
+               border: hidden;
+               background-color: white;
+               padding: 5px 20px;
+               border-radius: 10px;
+               margin: 0 70px;
+               margin-top: 50px;
+            }
+
+            /* OR POSITION  */
+            h4{
+                text-align: center;
+            }
+
+            /* UPLOAD */
+            .up{
+                border: hidden;
+                background-color: white;
+                text-align: center;
+                width: 100px;
+                height: 70px;
+                padding-top: 50px;
+                margin-left: 70px;
+            }
+        </style>
+        <body>
+            <!-----------        LANDING OF THE TEXT            --------------->
+            <div id="landing">
+                <div class="df"  id="ma">
+                    <div class="pos"><!---------POSITION OF THE LOGO    ----->
+                        <div class="frist">
+                            <div class="middle">
+                                <div class="inside"></div>
+                             </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+               
+            <!--------           LEFT SIDE   ----------->
+                <div class="df">
+                    <div id="ma">
+                        <div id="ups"><i class="material-icons">person_outline </i><br>Student</div>
+                        <div id="plan"><i class="fa fa-book"></i><br> Lesson Plan</div>
+                        <div id="ups"><i class="fa fa-cog"> </i><br>Settings</div>
+                    </div>
+                    <!----------       RIGHT SIDE   -------->
+                    <details>
+                        <summary>Videos</summary>
+                        <p class="ins">Insert URL here</p>
+                        <h4>or</h4>
+                        <p class="up">upload</p>
+                    </details>
+                </div>    
+            </div>
+        </body>
+</html>
